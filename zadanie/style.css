@@ -1,0 +1,93 @@
+/* Global styles */
+body {
+	margin: 0;
+	font-family: "Arial", sans-serif;
+	background: radial-gradient(circle at top, #1a1a2e, #0f0f1f, #000) no-repeat;
+	color: #f2f2f2;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.wrapper {
+	background: rgba(255, 69, 0, 0.1);
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+	width: 90%;
+	max-width: 600px;
+}
+
+img {
+	max-width: 500px;
+	max-height: 500px;
+	min-height: 500px;
+	margin-bottom: 1rem;
+	border: 1px solid rgba(255, 165, 0, 0.8);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+label {
+	display: block;
+	margin: 1rem 0;
+	font-size: 1.1rem;
+}
+
+select,
+input {
+	font-size: 1rem;
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	border: 2px solid #ff4500;
+	border-radius: 5px;
+	background: #1a1a2e;
+	color: #f2f2f2;
+	width: 100%;
+	max-width: 300px;
+	box-shadow: 0 0 10px rgba(255, 69, 0, 0.8) inset;
+	outline: none;
+}
+
+/* Button styling */
+button {
+	background: linear-gradient(45deg, #ff4500, #ff6347);
+	border: none;
+	border-radius: 5px;
+	color: #f2f2f2;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.75rem 1.5rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 15px rgba(255, 69, 0, 0.6);
+}
+
+button:hover {
+	background: linear-gradient(45deg, #ff6347, #ff4500);
+	transform: translateY(-3px);
+	box-shadow: 0 5px 10px rgba(255, 69, 0, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	.wrapper {
+		padding: 1rem;
+	}
+
+	label {
+		font-size: 1rem;
+	}
+
+	button {
+		font-size: 0.9rem;
+		padding: 0.5rem 1rem;
+	}
+}

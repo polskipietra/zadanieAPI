@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zdjęcia z Marsa</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<img
+				src="https://cdn.pixabay.com/photo/2012/11/28/09/08/mars-67522_1280.jpg"
+				alt="Zdjęcie z łazika Marsjańskiego"
+			/>
+			<label>
+				Wybierz swój łazik:
+				<select name="rovers" id="rovers" required>
+					<option value="" aria-checked="true">Wybierz</option>
+					<option value="curiosity">Curiosity</option>
+					<option value="opportunity">Opportunity</option>
+					<option value="spirit">Spirit</option>
+				</select>
+			</label>
+			<label>
+				Wybierz dzień marsjański (SOL) w zakresie od 0 do 2000:
+				<input
+					type="number"
+					id="sol"
+					min="0"
+					max="2000"
+					placeholder="1000 działa prawie zawsze"
+				/>
+			</label>
+			<button>Generuj zdjęcie</button>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
