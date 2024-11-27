@@ -5,13 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Zdjęcia z Marsa</title>
 		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://kit.fontawesome.com/64fa2eac77.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<div class="wrapper">
-			<img
-				src="https://cdn.pixabay.com/photo/2012/11/28/09/08/mars-67522_1280.jpg"
-				alt="Zdjęcie z łazika Marsjańskiego"
-			/>
+			<div class="imageContainer">
+				<button class="left"><i class="fa-solid fa-angle-left"></i></button>
+				<img
+					src="https://cdn.pixabay.com/photo/2012/11/28/09/08/mars-67522_1280.jpg"
+					alt="Zdjęcie łazika Marsjańskiego"
+				/>
+				<button class="right"><i class="fa-solid fa-angle-right"></i></button>
+			</div>
 			<label>
 				Wybierz swój łazik:
 				<select name="rovers" id="rovers" required>
@@ -22,16 +30,10 @@
 				</select>
 			</label>
 			<label>
-				Wybierz dzień marsjański (SOL) w zakresie od 0 do 2000:
-				<input
-					type="number"
-					id="sol"
-					min="0"
-					max="2000"
-					placeholder="1000 działa prawie zawsze"
-				/>
+				Wybierz dzień marsjański (SOL):
+				<input type="number" id="sol" min="0" max="2000" />
 			</label>
-			<button>Generuj zdjęcie</button>
+			<button class="generate">Generuj zdjęcie</button>
 		</div>
 
 		<script src="./script.js"></script>
